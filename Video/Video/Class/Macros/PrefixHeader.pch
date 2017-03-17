@@ -1,0 +1,204 @@
+//
+//  PrefixHeader.pch
+//  Lesson_Mulmedia
+//
+//  Created by 朱鹏 on 16/4/27.
+//  Copyright © 2016年 朱鹏 All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+//行标确定，不要删和加
+#pragma mark -----------工具类头文件导入-----------
+//朱鹏
+#import "MSQSelectedNavigationViewTools.h"
+#import "MTabBar.h"
+#import "UIBarButtonItem+Extension.h"
+#define RGBColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#import "UIView+Extension.h"
+#import "MNavigationController.h"
+#import "TabBarViewController.h"
+#import "NewfeatureViewController.h"
+//帅帅
+#import <MBProgressHUD.h>
+#import <JPush/JPUSHService.h>
+#import <MJRefresh.h>
+#import <SDWebImage/SDImageCache.h>
+#import <UIImageView+WebCache.h>
+#import "MICarouselTools.h"
+#import <RESideMenu.h>
+#import <CoreLocation/CoreLocation.h>
+#import "MSQFileReadAndWriteTools.h"
+#import "MSQShare.h"  //分享；
+#import "SendBoxPath.h"
+#import "Masonry.h"
+#import "HMSideMenu.h"
+//勇勇
+
+#import <AFNetworking.h>
+#import "MSQMediaPlayer.h"
+#import "MSQMediaPlayerMaskView.h"
+#import <UMSocial.h>  //友盟
+#import <UMSocialSinaSSOHandler.h>
+#import <UMSocialWechatHandler.h>
+#import <UMSocialQQHandler.h>
+#import <RQShineLabel.h>   //字体
+#import <AVOSCloud/AVObject.h>
+#import <AVOSCloud/AVOSCloud.h>
+
+//建建
+#import <MediaPlayer/MediaPlayer.h>
+#import "PlayViewController.h"          //自定义播放视频类
+#import "PlayViewVC.h"
+
+
+
+
+
+
+
+
+#import <AVFoundation/AVFoundation.h>     //音视频播放头文件
+
+#pragma mark -----------model头文件导入-----------
+//朱鹏
+#define kScreenW [UIScreen mainScreen].bounds.size.width
+#define kScreenH [UIScreen mainScreen].bounds.size.height
+#import "MovieModel.h"
+
+
+
+
+
+//帅帅
+#define kHeight [UIScreen mainScreen].bounds.size.height
+#define kWidth  [UIScreen mainScreen].bounds.size.width
+#import "FunnyModel.h"
+#import "FunnyTableViewCell.h"
+#import "FunnyDetailViewController.h"
+#import "DownLoadManager.h"
+#import "SaoViewController.h"
+
+//勇勇
+#import "CleanCaches.h" //清楚缓存
+
+
+
+
+
+
+
+
+
+
+
+//建建
+#import "NewsModel.h"
+#import "NewsVideoTopicModel.h"
+#import "NewsTableViewCell.h"
+
+
+
+
+
+#pragma mark -----------视频网址------------------
+//毛韶谦http://service.vmovier.com/api/post/getPostInCate?cateid=0&p=1
+//接口地址：http://app.vmoiver.com/apiv3/post/getPostByTab
+#define kMovieURL @"http://service.vmovier.com/api/post/getPostInCate"
+//http://service.vmovier.com/api/post/getPostInCate?cateid=6&p=1
+////创意
+
+//接口地址：http://app.vmoiver.com/apiv3/post/view
+#define kInfoMovie @"http://service.vmovier.com/api/post/view"
+//目标接口：https://api.thinkpage.cn/v3/weather/now.json?key=snemrbgx0sf5x59g&location=beijing&language=zh-Hans&unit=c
+#define kWeatherUrl @"https://api.thinkpage.cn/v3/weather/now.json"
+
+
+
+
+
+//帅帅
+#define kFunnyUrl @"http://s.budejie.com/topic/list/zuixin/41/baisi_xiaohao-iphone-4.1/0-20.json"  //最新搞笑视频接口
+#define kFunny_1Url @"http://s.budejie.com/topic/list/jingxuan/41/baisi_xiaohao-iphone-4.1/0-20.json"  //精品搞笑视频接口
+#define kFunny_gameUrl @"http://s.budejie.com/topic/tag-topic/164/new/baisi_xiaohao-iphone-4.1/0-20.json"  //游戏视频接口
+#import <LocalAuthentication/LocalAuthentication.h>  //指纹验证
+
+
+
+
+
+
+
+
+
+
+
+//勇勇
+//1、文艺类视频界面
+//目标网址：http://interface.tiaooo.com/?&c=elegant&m=top_list
+#define kURL @"http://interface.tiaooo.com/?dance=%E7%83%AD%E9%97%A8&c=elegant&m=top_list"
+
+#define kMVURL @"http://interface.tiaooo.com/?dance=MV&c=elegant&m=top_list"
+
+#define kEnURL @"http://interface.tiaooo.com/?dance=URBAN&c=elegant&m=top_list"
+
+
+
+
+
+
+//建建
+#define KNewsURL @"http://c.3g.163.com/recommend/getChanListNews/?channel=T1457068979049&passport=&devId=xbo"
+#define kNewsCellH 230
+
+
+
+
+#pragma mark -------------------主界面头文件-------------------
+
+#import "NewsViewController.h"
+#import "ArtViewController.h"
+#import "VMovieViewController.h"
+#import "VMovieViewController.h"
+#import "FunnyViewController.h"
+#import "LeftViewController.h"
+#import "RightViewController.h"
+#import "AppDelegate.h"
+#import "LoginViewController.h"
+#import "RegistViewController.h"
+
+#import "ArtModel.h"
+
+#import "FindPswViewController.h"
+
+//夜间模式damo
+#import "ThemeManage.h"
+#import "UIView+ThemeChange.h"
+#import "UILabel+ThemeChange.h"
+#import "UIButton+ThemeChange.h"
+#import "UITabBar+ThemeChange.h"
+#import "UINavigationBar+ThemeChange.h"
+#import "UIView+RemoveNotifition.h"
+
+
+
+#pragma mark ----------路径-----------
+
+#define kMoviePath [[SendBoxPath libraryPath] stringByAppendingPathComponent:@"moviePath"]
+#define kSciencePath [[SendBoxPath libraryPath] stringByAppendingPathComponent:@"sciencePath"]
+#define kCreationPath [[SendBoxPath libraryPath] stringByAppendingPathComponent:@"creationPath"]
+#define kThirdParty [[SendBoxPath documentsPath]stringByAppendingPathComponent:@"thirdPartyUser"]    //第三方登录，信息；
+#define kUserInfoParth [[SendBoxPath documentsPath]stringByAppendingPathComponent:@"userInfoParty"]   //用户信息；
+#define kPlayRecord [[SendBoxPath libraryPath] stringByAppendingPathComponent:@"playRecord"]   //播放记录
+//收藏
+#import "CollectModel.h"
+#import "CollectModel+CoreDataProperties.h"
+#import "CollectionModel.h"
+#import "CollectManager.h"
+#import "CollectTableViewCell.h"
+#import "UITableView+UItableView_EmptyData.h"
+#import "CollectViewController.h"
+
+#import "complaintViewController.h"
+#endif /* PrefixHeader_pch */
